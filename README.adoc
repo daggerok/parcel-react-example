@@ -1,0 +1,14 @@
+= parcel-react-example
+This is all about how easy and quick we can start react using parcel without any create-react-app or any other generators..
+
+.log
+----
+yarn init -y
+yarn add -E react react-dom
+yarn add -ED parcel-bundler babel-preset-react babel-preset-env
+echo '{ "presets": ["env", "react"] }' > .babelrc
+
+touch index.html main.js
+
+parcel -p 3000 index.html
+----

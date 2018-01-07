@@ -1,0 +1,34 @@
+{
+  "name": "parcel-react-example",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "react": "16.2.0",
+    "react-dom": "16.2.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "1.6.1",
+    "babel-preset-react": "6.24.1",
+    "gh-pages": "1.1.0",
+    "ncp": "2.0.0",
+    "node-sass": "4.7.2",
+    "npm-run-all": "4.1.2",
+    "parcel-bundler": "1.4.1"
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "env"
+    ]
+  },
+  "homepage": "https://daggerok.github.io/parcel-react-example",
+  "scripts": {
+    "start": "parcel -p 3000 ./app/index.html",
+    "pregithub": "npm-run-all pregithub:*",
+    "pregithub:build": "parcel build ./app/index.html --public-url '/parcel-react-example/'",
+    "pregithub:404": "ncp ./dist/index.html ./dist/404.html",
+    "pregithub:nojekyll": "touch ./dist/.nojekyll",
+    "github": "gh-pages --dist ./dist/ --src '**/*' --branch gh-pages --dotfiles=true -m \"Github Pages $(date +%Y-%m-%d) deployment\"",
+  }
+}
