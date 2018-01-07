@@ -1,4 +1,4 @@
-= parcel-react-example
+= parcel-react-example image:https://travis-ci.org/daggerok/parcel-react-example.svg?branch=master["Build Status", link="https://travis-ci.org/daggerok/parcel-react-example"]
 This is all about how easy and quick we can start react using parcel without any create-react-app or any other generators..
 
 .log
