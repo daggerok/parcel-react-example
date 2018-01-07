@@ -1,0 +1,12 @@
+.idea/
+.cache/
+dist/
+node_modules/
+
+*.iml
+*.iws
+*.ipr
+*.log
+.DS_Store
+yarn.lock
+package-lock.json
